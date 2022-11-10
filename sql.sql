@@ -1,0 +1,10 @@
+SELECT 
+  'YYYY-MM-DD HH24:MI:SS'
+  , 'YYYY-MM-DD HH24:MI:00'
+  , 'YYYY-MM-DD HH24:00:00'
+  , 'YYYY-MM-DD 00:00:00'
+
+
+
+
+  
