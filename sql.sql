@@ -6,5 +6,5 @@ SELECT
 
 
 
-
+RAISE NOTICE 'from = %', from;
   
