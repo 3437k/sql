@@ -5,8 +5,6 @@ SELECT
   , 'YYYY-MM-DD HH24:00:00'
   , 'YYYY-MM-DD 00:00:00'
 
-
-
 RAISE NOTICE 'from = %', from;
 
 -- 2022-11-11 (Fri)
