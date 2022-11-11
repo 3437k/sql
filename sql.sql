@@ -8,3 +8,4 @@ SELECT
 
 RAISE NOTICE 'from = %', from;
   
+SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END AS result;  
