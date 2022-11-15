@@ -23,6 +23,12 @@ SELECT LOWER('EARTH') -- earth
 DELETE FROM public.TABLE_NAME
 SELECT summ::JSON ->> 'job_info' FROM public.log_table
 
+SELECT 
+  * 
+FROM 
+  t_table 
+WHERE 
+  date = (SELECT MAX(date) FROM t_table);
 
 
 
