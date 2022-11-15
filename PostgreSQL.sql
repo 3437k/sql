@@ -20,3 +20,10 @@ SELECT UPPER('sun') -- SUN
 SELECT LOWER('EARTH') -- earth
 
 -- 2022-11-15 (Tue)
+DELETE FROM public.TABLE_NAME
+SELECT summ::JSON ->> 'job_info' FROM public.log_table
+
+
+
+
+
