@@ -38,3 +38,6 @@ SELECT
     , TO_CHAR(10000.0000, 'FM999,999.00') -- 10,000.00
     , TO_CHAR(10000.0000, 'FM999.00') -- ###.##   
 ;
+
+-- SELECT ARRAY_TO_JSON(ARRAY_AGG(item)) FROM table AS item 
+-- SELECT json_array_elements(array.item) ->> 'key' FROM table as array
