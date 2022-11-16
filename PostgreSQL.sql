@@ -31,5 +31,5 @@ WHERE
   date = (SELECT MAX(date) FROM t_table);
 
 
-
+-- 2022-11-16 (Wed)
 
