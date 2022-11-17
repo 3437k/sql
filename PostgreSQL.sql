@@ -41,3 +41,6 @@ SELECT
 
 -- SELECT ARRAY_TO_JSON(ARRAY_AGG(item)) FROM table AS item 
 -- SELECT json_array_elements(array.item) ->> 'key' FROM table as array
+
+
+-- 2022-11-17 (Thu)
