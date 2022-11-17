@@ -60,3 +60,5 @@ SELECT
     , SUBSTRING('abcdefg', 1, 3) -- abc
     , SUBSTRING('abcdefg', 1, 4) -- abcd
     , SUBSTRING('abcdefg', 2, 3) -- bcd
+
+-- split_part()
