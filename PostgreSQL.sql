@@ -7,6 +7,8 @@ SELECT
 
 RAISE NOTICE 'from = %', from;
 
+
+
 -- 2022-11-11 (Fri)
 SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END AS result;  
 
@@ -15,9 +17,13 @@ SELECT COALESCE(NULL, 3); -- 3
 
 SELECT '20221101'::TIMESTAMP <= '20221122'::TIMESTAMP -- TRUE
 
+
+
 -- 2022-11-14 (Mon)
 SELECT UPPER('sun') -- SUN
 SELECT LOWER('EARTH') -- earth
+
+
 
 -- 2022-11-15 (Tue)
 DELETE FROM public.TABLE_NAME
@@ -29,6 +35,7 @@ FROM
   t_table 
 WHERE 
   date = (SELECT MAX(date) FROM t_table);
+
 
 
 -- 2022-11-16 (Wed)
@@ -43,4 +50,13 @@ SELECT
 -- SELECT json_array_elements(array.item) ->> 'key' FROM table as array
 
 
+
 -- 2022-11-17 (Thu)
+SELECT 
+    SUBSTRING('abcdefg', 1) -- abcdefg
+    , SUBSTRING('abcdefg', 2) -- bcdefg
+    , SUBSTRING('abcdefg', 3) -- cdefg
+    , SUBSTRING('abcdefg', 1, 2) -- ab
+    , SUBSTRING('abcdefg', 1, 3) -- abc
+    , SUBSTRING('abcdefg', 1, 4) -- abcd
+    , SUBSTRING('abcdefg', 2, 3) -- bcd
