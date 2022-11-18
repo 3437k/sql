@@ -7,8 +7,6 @@ SELECT
 
 RAISE NOTICE 'from = %', from;
 
-
-
 -- 2022-11-11 (Fri)
 SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END AS result;  
 
@@ -17,13 +15,9 @@ SELECT COALESCE(NULL, 3); -- 3
 
 SELECT '20221101'::TIMESTAMP <= '20221122'::TIMESTAMP -- TRUE
 
-
-
 -- 2022-11-14 (Mon)
 SELECT UPPER('sun') -- SUN
 SELECT LOWER('EARTH') -- earth
-
-
 
 -- 2022-11-15 (Tue)
 DELETE FROM public.TABLE_NAME
@@ -36,8 +30,6 @@ FROM
 WHERE 
   date = (SELECT MAX(date) FROM t_table);
 
-
-
 -- 2022-11-16 (Wed)
 SELECT
     TO_CHAR(10000.0000, 'FM999,999,990') -- 10,000
@@ -48,8 +40,6 @@ SELECT
 
 -- SELECT ARRAY_TO_JSON(ARRAY_AGG(item)) FROM table AS item 
 -- SELECT json_array_elements(array.item) ->> 'key' FROM table as array
-
-
 
 -- 2022-11-17 (Thu)
 SELECT 
@@ -62,3 +52,5 @@ SELECT
     , SUBSTRING('abcdefg', 2, 3) -- bcd
 
 -- split_part()
+
+-- 2022-11-18 (Fri)
