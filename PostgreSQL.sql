@@ -54,5 +54,7 @@ SELECT
 -- split_part()
 
 -- 2022-11-18 (Fri)
+-- SELECT AVG()
 
 -- 2022-11-19 (Sat)
+-- SELECT STDDEV()
