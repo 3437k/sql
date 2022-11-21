@@ -58,3 +58,5 @@ SELECT
 
 -- 2022-11-19 (Sat)
 -- SELECT STDDEV()
+
+-- 2022-11-21 (Mon)
