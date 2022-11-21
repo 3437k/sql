@@ -42,7 +42,7 @@ SELECT
 -- SELECT json_array_elements(array.item) ->> 'key' FROM table as array
 
 -- 2022-11-17 (Thu)
-SELECT 
+SELECT
     SUBSTRING('abcdefg', 1) -- abcdefg
     , SUBSTRING('abcdefg', 2) -- bcdefg
     , SUBSTRING('abcdefg', 3) -- cdefg
@@ -60,3 +60,8 @@ SELECT
 -- SELECT STDDEV()
 
 -- 2022-11-21 (Mon)
+SELECT 
+  full_address AS first_address
+  , full_address AS last_address
+FROM addr_table
+
