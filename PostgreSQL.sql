@@ -65,3 +65,15 @@ SELECT
   , full_address AS last_address
 FROM addr_table
 
+-- 2022-11-22 (Tue)
+-- INTERVAL
+-- SUM(A - B) OVER(ORDER BY A ASC)
+-- LEFT OUTER JOIN
+-- JOIN
+SELECT SUM(CASE WHEN moved = '0' THEN 1 ELSE 0 END) AS size 
+
+
+
+
+
+
