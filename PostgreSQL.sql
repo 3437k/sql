@@ -72,6 +72,7 @@ FROM addr_table
 -- JOIN
 SELECT SUM(CASE WHEN moved = '0' THEN 1 ELSE 0 END) AS size 
 
+-- 2022-11-24 (Thu)
 -- order reserved keyword
 -- INSERT INTO table (
   "order"
