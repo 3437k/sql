@@ -72,8 +72,10 @@ FROM addr_table
 -- JOIN
 SELECT SUM(CASE WHEN moved = '0' THEN 1 ELSE 0 END) AS size 
 
-
-
+-- order reserved keyword
+-- INSERT INTO table (
+  "order"
+) VALUES (1)
 
 
 
