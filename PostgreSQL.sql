@@ -79,4 +79,7 @@ SELECT SUM(CASE WHEN moved = '0' THEN 1 ELSE 0 END) AS size
 ) VALUES (1)
 
 
+-- 2022-11-25 (Fri)
+SELECT MIN(target_date) FROM items
+SELECT MAX(target_date) FROM items
 
