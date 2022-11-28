@@ -83,3 +83,9 @@ SELECT SUM(CASE WHEN moved = '0' THEN 1 ELSE 0 END) AS size
 SELECT MIN(target_date) FROM items
 SELECT MAX(target_date) FROM items
 
+-- 2022-11-28 (Mon)
+SELECT name
+FROM public.general_agent_users
+GROUP BY name
+;
+
