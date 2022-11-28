@@ -5,3 +5,7 @@ SELECT
 
 -- 2022-11-21 (Mon)
 SELECT value FROM STRING_SPLIT('Seoul Busan', ' ');
+
+-- 2022-11-28 (Mon)
+SUM(CONVERT(INTEGER, d1))
+
