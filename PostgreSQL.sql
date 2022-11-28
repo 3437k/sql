@@ -89,3 +89,15 @@ FROM public.general_agent_users
 GROUP BY name
 ;
 
+SELECT 
+  name
+  , COUNT(*)
+  , SUM(attending)
+  , SUM(attending) / COUNT(*)
+  , AVG(attending)
+FROM 
+  public.general_agent_users
+GROUP BY name
+;
+
+
