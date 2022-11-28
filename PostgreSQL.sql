@@ -100,4 +100,6 @@ FROM
 GROUP BY name
 ;
 
+-- DELETE FROM table WHERE time >= '2022-11-28 17:00:00'; 
+
 
