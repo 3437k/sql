@@ -112,3 +112,12 @@ FOR IN SELECT LOOP
   FROM
   WHERE 
 END LOOP
+
+FOR t_info IN SELECT 
+                  u.id
+                  , u.name
+                  , u.age 
+              FROM user AS u
+LOOP 
+  RAISE NOTICE '%', t.info.id;
+END LOOP;
