@@ -105,3 +105,12 @@ GROUP BY name
 
 -- 2022-11-30 (Wed)
 
+-- 2022-12-01 (Thu)
+FOR IN SELECT LOOP
+  UPDATE 
+  SET
+  FROM
+  WHERE 
+END LOOP
+
+
