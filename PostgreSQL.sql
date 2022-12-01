@@ -121,3 +121,8 @@ FOR t_info IN SELECT
 LOOP 
   RAISE NOTICE '%', t.info.id;
 END LOOP;
+
+UPDATE tableA as ta 
+SET name = 'new'
+FROM (SELECT name FROM tableB WHERE id = 1) as tb
+WHERE ta.name = tb.name
