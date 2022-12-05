@@ -126,3 +126,5 @@ UPDATE tableA as ta
 SET name = 'new'
 FROM (SELECT name FROM tableB WHERE id = 1) as tb
 WHERE ta.name = tb.name
+
+-- 2022-12-05 (Mon)
