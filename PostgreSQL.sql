@@ -128,3 +128,6 @@ FROM (SELECT name FROM tableB WHERE id = 1) as tb
 WHERE ta.name = tb.name
 
 -- 2022-12-05 (Mon)
+
+-- 2022-12-06 (Tue)
+TRUNCATE TABLE base_table
