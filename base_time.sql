@@ -16,7 +16,7 @@ WHERE 1=1
 -- 2022-12-01 ~ 2022-12-31 
 AND target >= TO_CHAR(date_trunc('month', NOW()), 'YYYYMMDD')
 AND target <= TO_CHAR(DATE_TRUNC('MONTH', (NOW()+'1 MONTH'::INTERVAL)) - '1 DAY'::INTERVAL, 'YYYYMMDD')
-
+;
 
 -- 2022-12-07 (Wed)
-SELECT TO_CHAR(end_date, 'YYYYMMDD)'::TIMESTAMP - TO_CHAR(start_date, 'YYYYMMDD)'::TIMESTAMP FROM base_table
+SELECT TO_CHAR(end_date, 'YYYYMMDD)'::TIMESTAMP - TO_CHAR(start_date, 'YYYYMMDD)'::TIMESTAMP FROM base_table;
