@@ -21,14 +21,14 @@ SELECT LOWER('EARTH') -- earth
 
 -- 2022-11-15 (Tue)
 DELETE FROM public.TABLE_NAME
-SELECT summ::JSON ->> 'job_info' FROM public.log_table
+SELECT items::JSON ->> 'item' FROM public.base_table
 
 SELECT 
   * 
 FROM 
-  t_table 
+  base_table 
 WHERE 
-  date = (SELECT MAX(date) FROM t_table);
+  date = (SELECT MAX(date) FROM base_table);
 
 -- 2022-11-16 (Wed)
 SELECT
@@ -38,8 +38,8 @@ SELECT
     , TO_CHAR(10000.0000, 'FM999.00') -- ###.##   
 ;
 
--- SELECT ARRAY_TO_JSON(ARRAY_AGG(item)) FROM table AS item 
--- SELECT json_array_elements(array.item) ->> 'key' FROM table as array
+-- SELECT ARRAY_TO_JSON(ARRAY_AGG(item)) FROM base_table AS item 
+-- SELECT json_array_elements(array.item) ->> 'key' FROM base_table as array
 
 -- 2022-11-17 (Thu)
 SELECT
@@ -96,7 +96,7 @@ SELECT
   , SUM(attending) / COUNT(*)
   , AVG(attending)
 FROM 
-  public.general_agent_users
+  public.base_table
 GROUP BY name
 ;
 
