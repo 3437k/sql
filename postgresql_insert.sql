@@ -27,5 +27,13 @@ SELECT init_time, update_time, log_level, log_message
 FROM base_table
 WHERE log_level = 'ERROR';
 
+INSERT INTO base_logs (id, init_time, update_time, log_level, log_message)
+SELECT 
+  nextval('base_table_id_seq'),
+  CURRENT_TIMESTAMP,
+  CURRENT_TIMESTAMP,
+  'INFO',
+  'This is a dummy log message'
+FROM GENERATE_SERIES(1, 100, 1);
 
 
