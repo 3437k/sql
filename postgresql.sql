@@ -131,3 +131,6 @@ WHERE ta.name = tb.name
 
 -- 2022-12-06 (Tue)
 TRUNCATE TABLE base_table
+
+-- 2022-12-11 (
+SELECT VERSION();
