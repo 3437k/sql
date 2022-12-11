@@ -21,3 +21,7 @@ AND target <= TO_CHAR(DATE_TRUNC('MONTH', (NOW()+'1 MONTH'::INTERVAL)) - '1 DAY'
 -- 2022-12-07 (Wed)
 -- end_time - start_time
 SELECT TO_CHAR(end_date, 'YYYYMMDD)'::TIMESTAMP - TO_CHAR(start_date, 'YYYYMMDD)'::TIMESTAMP FROM base_table;
+
+-- 2022-12-11 (Sun)
+SELECT CURRENT_TIMESTAMP
+                                                          
