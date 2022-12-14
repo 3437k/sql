@@ -134,3 +134,6 @@ TRUNCATE TABLE base_table
 
 -- 2022-12-11 (Sun)
 SELECT VERSION();
+
+-- 2022-12-14 (Wed)
+-- TODO... 
