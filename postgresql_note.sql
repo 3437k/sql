@@ -142,3 +142,4 @@ SELECT VERSION();
 -- 2022-12-15 (Thu)
 EXPLAIN SELECT 1; -- Display => Result
 EXPLAIN ANALYZE SELECT 1; -- Display => Result, Planning Time, Execution Time 
+-- UNNEST 
