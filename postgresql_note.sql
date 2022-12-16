@@ -143,3 +143,17 @@ SELECT VERSION();
 EXPLAIN SELECT 1; -- Display => Result
 EXPLAIN ANALYZE SELECT 1; -- Display => Result, Planning Time, Execution Time 
 -- UNNEST 
+
+
+-- 2022-12-16 (Fri)
+SELECT * FROM ga_users WHERE city = 'seoul';
+
+SELECT DISTINCT product_name, COUNT(*) as number_orders
+FROM orders
+JOIN products ON orders.product_id = products.product_id
+GROUP BY product_name
+HAVING COUNT(*) > 10
+ORDER BY num_orders DESC
+LIMIT 10;
+
+
