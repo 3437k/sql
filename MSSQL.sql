@@ -9,3 +9,7 @@ SELECT value FROM STRING_SPLIT('Seoul Busan', ' ');
 -- 2022-11-28 (Mon)
 SUM(CONVERT(INTEGER, d1))
 
+-- 2022-12-19 (Mon)
+-- (getdate() - regist_dd) AS [Number of Days]
+-- refactor 
+DATEDIFF(day, target_date, GETDATE()) AS [Number of Days]
